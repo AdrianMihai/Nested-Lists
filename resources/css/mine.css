@@ -1,0 +1,335 @@
+body{
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+}
+.navbar{
+	border-bottom: 1px solid #FF6D68;
+	margin-bottom: 0px;
+}
+nav .navbar-header{
+	width: 100%;
+}
+nav .logo{
+	position: relative;
+	margin: 8px 15px;
+	float: left;
+
+	/*color: #669eff;*/
+	color: #000;
+	-webkit-text-stroke: 1px #fff;
+	font-size: 24px;
+	font-style: italic;
+
+	z-index: 1060;
+}
+.over-navbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0px;
+	width:0%;
+	height: 0%;
+
+	color: #FFF;
+	font-size: 16px;
+	background: rgba(0, 0, 0 , 0.9);
+	box-shadow: 0px 0px 20px #fff inset;
+
+	opacity: 0.25;
+	overflow: hidden;
+	overflow-y: auto;
+	z-index: 1050;
+}
+.over-navbar .close{
+	position: relative;
+	top:0px;
+	right: 0px;
+	margin: 0px 15px;
+	padding: 12px;
+
+	color: #FFF;
+	font-size: 24px;
+
+	opacity: .4;
+	transition: opacity .2s ease-in-out;
+}
+.over-navbar .close:hover{
+	opacity: .75;
+}
+.over-navbar .container{
+	padding-top: 51px;
+	padding-bottom: 26px;
+}
+.over-navbar p{
+	padding:7px 20px;
+	
+
+	border-radius: 4px;
+
+	transition: all .4s ease-in-out;
+	cursor: pointer;
+}
+.over-navbar p:hover{
+	background: #666;
+}
+.over-navbar .top-line, .over-navbar .left-line{
+	position: relative;
+	top: 0px;
+	left: 0px;
+
+	border-radius: 4px;
+	background-color: #7F3634;
+}
+
+/* Header of each nested list */
+ul[data-list="nested"].navbar-list .list-header {
+	padding: 7px 10px;
+	margin-top: 16px;
+
+	border-radius: 4px;
+	border: 1px solid #eee;
+
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+ul[data-list="nested"].navbar-list .list-header.list-active{
+	color:#000;
+	background: #fff;
+}
+ul[data-list="nested"].navbar-list .list-header:hover{
+	background: #666;
+}
+ul[data-list="nested"].navbar-list .list-header.list-active:hover{
+	color:#000;
+	background: #fff;
+}
+ul[data-list="nested"].navbar-list .list-header span:first-child {
+	top: 2px;
+	margin-right: 2px;
+}
+
+ul[data-list="nested"].navbar-list .nested-list {
+  position: relative;
+  padding-left: 25px;
+  max-height: 0px;
+  margin-top: 0px;
+
+  font-size: 12px;
+
+  opacity: 0.25;
+  overflow: hidden;
+}
+
+ul[data-list="nested"].navbar-list .nested-list li {
+	margin-top: 5px; /* data-margin */
+	padding: 5px;
+	max-height: 70px;
+
+	border: 1px solid transparent;
+	border-left-color: #fff;
+
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+
+ul[data-list="nested"].navbar-list .nested-list li:hover{
+	border: 1px solid #FF6D68;
+	border-radius: 4px;
+}
+
+/*The sliding line */
+ul[data-list="nested"].navbar-list .sliding-line {
+	position: absolute;
+	width: 1px;
+	height: 28px;
+
+	background: #FF6D68;
+	-webkit-box-shadow: 0px 2px 35px 0px #D66F31;
+	-moz-box-shadow: 0px 2px 35px 0px #D66F31;
+	box-shadow: 0px 2px 35px 0px #D66F31;
+	opacity: 0.5;
+}
+
+.main-container{
+	padding-top: 50px !important;
+}
+.main-container .row{
+	height: 600px;
+	background-size: cover !important;
+}
+.main-container .row:first-child{
+	background: url('/ENGverb/resources/img/selectedBackgrounds/texture14.jpg') no-repeat ;
+}
+.main-container .row:nth-child(2){
+	background: url('/ENGverb/resources/img/selectedBackgrounds/texture12.jpg') no-repeat ;
+}
+.main-container .row:nth-child(3){
+	background: url('/ENGverb/resources/img/selectedBackgrounds/texture5.jpg') no-repeat ;
+}
+#scrollspy{
+	position: fixed;
+	margin-top: 15px;
+	margin-left: 15px;
+	top: calc(50% - 150px);
+	/*background: #333;
+	background: rgba(0, 0, 0, 0.75);*/
+}
+#scrollspy ul{
+	padding: 15px 0px;
+}
+
+#scrollspy ul li{
+	margin-top: 10px;
+}
+#scrollspy ul li span{
+	margin-right: 8px;
+	max-width: 0px;
+
+	overflow: hidden;
+	transition: all .3s ease-in-out;
+}
+#scrollspy ul li.active span{
+	max-width: 12px;
+}
+.nav>li>a{
+	color: #FFF;
+	text-shadow: -1px -1px 3px #000;
+	font-size: 12px;
+	border-radius: 0px;
+	border: 2px solid transparent;
+	border-left-color: #E8A753;
+
+	transition: all .3s ease-in-out;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+	border-radius: 4px;
+	background: #333;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+	color: #FFF;
+
+	background: #E8A753;
+	border-radius: 4px;
+}
+
+/*Nested list for profile infomration */
+ul[data-list="nested"].profile-info{
+	margin-top: 7%;
+
+	color: #fff;
+}
+ul[data-list="nested"].profile-info .list-header{
+	padding: 10px;
+
+	text-shadow: -1px -1px 3px #000;
+	border-radius: 4px;
+	border:1px solid transparent;
+	border-bottom-color: #fff;
+
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+ul[data-list="nested"].profile-info .list-active{
+	background: rgba(0, 0, 0, 0.75);
+}
+ul[data-list="nested"].profile-info .list-header:hover{
+	border-color: #448AFF;
+	background: rgba(0, 0, 0, 0.75);
+}
+ul[data-list="nested"].profile-info .nested-list {
+  position: relative;
+  padding-left: 25px;
+  max-height: 0px;
+  max-width: 300px;
+  margin-top: 0px;
+
+  font-size: 12px;
+  text-shadow: -1px -1px 3px #000;
+
+  opacity: 0.25;
+  overflow: hidden;
+}
+
+ul[data-list="nested"].profile-info .nested-list li {
+	margin-top: 3px; /* data-margin */
+	padding: 5px;
+	max-height: 70px;
+
+	border: 2px solid transparent;
+	border-left-color: #fff;
+
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+ul[data-list="nested"].profile-info .nested-list li:hover{
+	border: 2px solid #448AFF;
+	border-radius: 4px;
+}
+
+ul[data-list="nested"].profile-info .sliding-line {
+	position: absolute;
+	width: 2px;
+	height: 28px;
+
+	background: #448AFF;
+	-webkit-box-shadow: 0px 2px 35px 0px #D66F31;
+	-moz-box-shadow: 0px 2px 35px 0px #D66F31;
+	box-shadow: 0px 2px 35px 0px #D66F31;
+	opacity: 0.5;
+}
+
+#section2 .header-container{
+	margin-top:15px;
+}
+
+#section2 .header{
+	padding:20px;
+	clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+
+	border-radius: 4px;
+	color:#FFF;
+	background: rgba(0, 0, 0, 0.75);
+
+	cursor: pointer;
+	transition: all .4s ease-in-out;
+}
+
+#section2 .header:hover{
+
+	background: #FFF;
+	color: transparent;
+}
+
+/*scrollbar style */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background:#e6e6e6;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-button {
+	display:none;
+}
+::-webkit-scrollbar-corner {
+      display: none;
+}
+::-webkit-scrollbar-track {
+    width: 10px;
+    background:#e6e6e6;
+    border-radius: 4px;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border:1px solid #595959;
+    border-radius: 4px;
+    opacity: 0.25;
+} /* this will style the thumb, ignoring the track */
+
+@media screen and (max-width: 768px){
+	.col-xs-0{
+		width: 0%;
+		display:none;
+	 	overflow:hidden;
+	}
+}
